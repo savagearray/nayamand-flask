@@ -1,5 +1,5 @@
 from flask import Flask, render_template , flash, redirect, url_for, session, request
-from flask_sqlalchemy import flask_sqlalchemy
+from flask_sqlalchemy import SQLAlchemy
 from werkzeug import secure_filename
 
 app = Flask(__name__ , 
