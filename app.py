@@ -109,9 +109,13 @@ def ml_working():
 def future_prediction():
     return render_template('future_prediction.html')
 
-@app.route("/registration")
-def register_buyer():
-    return render_template('registration.html')
+@app.route("/registration_consumers")
+def register_consumer():
+    return render_template('registration_consumers.html')
+
+@app.route("/registration_sellers")
+def register_seller():
+    return render_template('registration_sellers.html')
 
 @app.route("/about_us")
 def about_us():
