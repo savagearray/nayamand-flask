@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
 from flask import request
 import psycopg2
+import base64
 
 app = Flask(__name__ , 
             static_url_path='', 
@@ -47,7 +48,7 @@ class RegisterBuyer(db.Model):
     holderbankname = db.Column(db.String(256))
     bankaccno = db.Column(db.Integer, unique = True)
     cbankaccno = db.Column(db.Integer, unique = True)
-    #photoidimg=db.Column(db.String(256))
+    
     
     def __init__(self, regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno):
         self.regtype = regtype
@@ -69,7 +70,7 @@ class RegisterBuyer(db.Model):
         self.holderbankname = holderbankname
         self.bankaccno = bankaccno
         self.cbankaccno = cbankaccno
-        #self.#photoidimg = #photoidimg
+        
         
     
 app.config["DEBUG"] = True
@@ -158,7 +159,8 @@ def submit():
         cbankaccno = request.form['cbankaccno']
         photoidimg = request.files['sign']
         photoidimg.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(photoidimg.filename)))
-        #photoidimg.read()
+        photoidimg.read()
+       
         if db.session.query(RegisterBuyer).filter(RegisterBuyer.mobno == mobno).count() == 0:
             data = RegisterBuyer(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
             db.session.add(data)
