@@ -1,6 +1,9 @@
+import os
 from flask import Flask, render_template , flash, redirect, url_for, session, request
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
+from flask import request
+import psycopg2
 
 app = Flask(__name__ , 
             static_url_path='', 
@@ -9,13 +12,15 @@ app = Flask(__name__ ,
 ENV = 'dev'
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:A4notebook@/nayamandi'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:A4notebook@localhost/nayamandi'
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+
+app.config['UPLOAD_FOLDER'] = 'C:\\Users\\Princekumar\\Desktop\\nayamand-flask\\upload_img'
 
 db = SQLAlchemy(app)
 
@@ -27,7 +32,7 @@ class RegisterBuyer(db.Model):
     fname = db.Column(db.String(256))
     gender = db.Column(db.String(256))
     Address = db.Column(db.String(256))
-    enterdate = db.Column(db.Integer)
+    enterdate = db.Column(db.String(256))
     pincode = db.Column(db.Integer)
     state = db.Column(db.String(256))
     distict = db.Column(db.String(256))
@@ -42,9 +47,9 @@ class RegisterBuyer(db.Model):
     holderbankname = db.Column(db.String(256))
     bankaccno = db.Column(db.Integer, unique = True)
     cbankaccno = db.Column(db.Integer, unique = True)
-    image=db.Column(db.String(256))
+    #photoidimg=db.Column(db.String(256))
     
-    def __init__(self, regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno, image):
+    def __init__(self, regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno):
         self.regtype = regtype
         self.fname = fname
         self.gender = gender
@@ -64,7 +69,8 @@ class RegisterBuyer(db.Model):
         self.holderbankname = holderbankname
         self.bankaccno = bankaccno
         self.cbankaccno = cbankaccno
-        self.image = image
+        #self.#photoidimg = #photoidimg
+        
     
 app.config["DEBUG"] = True
 app.secret_key = 'super secret key'
@@ -126,6 +132,8 @@ def login_consumers():
 def login_sellers():
     return render_template('login_sellers.html')
 
+
+
 @app.route("/submit_buyer", methods=['GET','POST'])
 def submit():
     if request.method == 'POST':
@@ -149,10 +157,16 @@ def submit():
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
         photoidimg = request.files['sign']
-        photoidimg.save(secure_filename(photoidimg.filename))
-        print(regtype,fname,gender,Address,enterdate,pincode,state,distict)
-        print(tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
-        print(photoidimg)
+        photoidimg.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(photoidimg.filename)))
+        #photoidimg.read()
+        if db.session.query(RegisterBuyer).filter(RegisterBuyer.mobno == mobno).count() == 0:
+            data = RegisterBuyer(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
+            db.session.add(data)
+            db.session.commit()
+            return "submitted"
+        else:
+            return 'already exist'
+        
         return "successfull"
 
 
