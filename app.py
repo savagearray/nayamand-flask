@@ -157,8 +157,8 @@ def submit():
         holderbankname = request.form['holderbankname']
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
-        photoidimg = request.files['sign']
-        photoidimg.save(secure_filename(photoidimg.filename))
+        #photoidimg = request.files['sign']
+        #photoidimg.save(secure_filename(photoidimg.filename))
        
         if db.session.query(RegisterBuyer).filter(RegisterBuyer.mobno == mobno).count() == 0:
             data = RegisterBuyer(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
