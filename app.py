@@ -110,7 +110,7 @@ def future_prediction():
     return render_template('future_prediction.html')
 
 @app.route("/registration")
-def registration():
+def register_buyer():
     return render_template('registration.html')
 
 @app.route("/about_us")
