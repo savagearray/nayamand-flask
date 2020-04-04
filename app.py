@@ -21,7 +21,7 @@ else:
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
-app.config['UPLOAD_FOLDER'] = 'C:\\Users\\Princekumar\\Desktop\\nayamand-flask\\upload_img'
+#app.config['UPLOAD_FOLDER'] = 'C:\\Users\\Princekumar\\Desktop\\nayamand-flask\\upload_img'
 
 db = SQLAlchemy(app)
 
@@ -158,8 +158,7 @@ def submit():
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
         photoidimg = request.files['sign']
-        photoidimg.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(photoidimg.filename)))
-        photoidimg.read()
+        photoidimg.save(secure_filename(photoidimg.filename))
        
         if db.session.query(RegisterBuyer).filter(RegisterBuyer.mobno == mobno).count() == 0:
             data = RegisterBuyer(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
