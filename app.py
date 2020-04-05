@@ -48,9 +48,11 @@ class RegisterConsumer(db.Model):
     holderbankname = db.Column(db.String(256))
     bankaccno = db.Column(db.Integer, unique = True)
     cbankaccno = db.Column(db.Integer, unique = True)
+    password = db.Column(db.Integer)
+    cpassword = db.Column(db.Integer)
     
     
-    def __init__(self,regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno):
+    def __init__(self,regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno, password, cpassword):
         self.regtype = regtype
         self.fname = fname
         self.gender = gender
@@ -70,6 +72,8 @@ class RegisterConsumer(db.Model):
         self.holderbankname = holderbankname
         self.bankaccno = bankaccno
         self.cbankaccno = cbankaccno
+        self.password = password
+        self.cpassword = cpassword
         
         
 class RegisterSeller(db.Model):
@@ -94,9 +98,11 @@ class RegisterSeller(db.Model):
     holderbankname = db.Column(db.String(256))
     bankaccno = db.Column(db.Integer, unique = True)
     cbankaccno = db.Column(db.Integer, unique = True)
+    password = db.Column(db.Integer)
+    cpassword = db.Column(db.Integer)
     
     
-    def __init__(self,regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno):
+    def __init__(self,regtype, fname, gender, Address, enterdate, pincode, state, distict, tehsil, photoid, idno, mobno, altmobno, emailaddr, altemailaddr, bankname, holderbankname, bankaccno, cbankaccno, password, cpassword):
         self.regtype = regtype
         self.fname = fname
         self.gender = gender
@@ -116,6 +122,8 @@ class RegisterSeller(db.Model):
         self.holderbankname = holderbankname
         self.bankaccno = bankaccno
         self.cbankaccno = cbankaccno
+        self.password = password
+        self.cpassword = cpassword
     
     
 app.config["DEBUG"] = True
@@ -210,11 +218,11 @@ def submit_consumer():
         holderbankname = request.form['holderbankname']
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
-        #photoidimg = request.files['sign']
-        #photoidimg.save(secure_filename(photoidimg.filename))
+        password = request.form['password']
+        cpassword = request.form['cpassword']
        
         if db.session.query(RegisterConsumer).filter(RegisterConsumer.mobno == mobno).count() == 0:
-            data = RegisterConsumer(fname,regtype,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
+            data = RegisterConsumer(fname,regtype,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno,password,cpassword)
             db.session.add(data)
             db.session.commit()
             return "submitted"
@@ -245,11 +253,13 @@ def submit_seller():
         holderbankname = request.form['holderbankname']
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
+        password = request.form['password']
+        cpassword = request.form['cpassword']
         #photoidimg = request.files['sign']
         #photoidimg.save(secure_filename(photoidimg.filename))
        
         if db.session.query(RegisterSeller).filter(RegisterSeller.mobno == mobno).count() == 0:
-            data = RegisterSeller(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
+            data = RegisterSeller(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno,password,cpassword)
             db.session.add(data)
             db.session.commit()
             return "submitted"
