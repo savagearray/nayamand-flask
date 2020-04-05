@@ -249,7 +249,7 @@ def submit_seller():
         #photoidimg.save(secure_filename(photoidimg.filename))
        
         if db.session.query(RegisterSeller).filter(RegisterSeller.mobno == mobno).count() == 0:
-            data = RegisterSeller(fname,regtype,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
+            data = RegisterSeller(regtype,fname,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno)
             db.session.add(data)
             db.session.commit()
             return "submitted"
