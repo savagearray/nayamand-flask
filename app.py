@@ -1,16 +1,16 @@
 import os
-from flask import Flask, render_template , flash, redirect, url_for, session, request
+from flask import Flask, render_template , flash, redirect, url_for, session, request, abort
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import secure_filename
 from flask import request
 import psycopg2
-import base64
+
 
 app = Flask(__name__ , 
             static_url_path='', 
             static_folder='static')
 
-ENV = 'prod'
+ENV = 'dev'
 if ENV == 'dev':
     app.debug = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:A4notebook@localhost/nayamandi'
@@ -140,11 +140,17 @@ def index():
 
 @app.route("/commodity")
 def commodity():
-    return render_template('commodity.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:
+        return render_template('commodity.html')
 
 @app.route("/license")
 def license():
-    return render_template('license.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:
+        return render_template('license.html')
 
 @app.route("/catalog")
 def catalog():
@@ -184,19 +190,31 @@ def payment_page4():
 
 @app.route("/price_details")
 def price_details():
-    return render_template('price_details.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:
+        return render_template('price_details.html')
 
 @app.route("/incentives")
 def incentives():
-    return render_template('incentives.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:
+        return render_template('incentives.html')
 
 @app.route("/ml_working")
 def ml_working():
-    return render_template('ml_working.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:    
+        return render_template('ml_working.html')
 
 @app.route("/future_prediction")
 def future_prediction():
-    return render_template('future_prediction.html')
+    if not session.get('logged_in'):
+        return render_template('login_consumers.html')
+    else:    
+        return render_template('future_prediction.html')
 
 @app.route("/registration_consumers")
 def register_consumer():
@@ -254,8 +272,8 @@ def submit_consumer():
         holderbankname = request.form['holderbankname']
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
-        password = request.form['password']
-        cpassword = request.form['cpassword']
+        password = str(request.form['password'])
+        cpassword = str(request.form['cpassword'])
        
         if db.session.query(RegisterConsumer).filter(RegisterConsumer.mobno == mobno).count() == 0:
             data = RegisterConsumer(fname,regtype,gender,Address,enterdate,pincode,state,distict,tehsil,photoid,idno,mobno,altmobno,emailaddr,altemailaddr,bankname,holderbankname,bankaccno,cbankaccno,password,cpassword)
@@ -289,8 +307,8 @@ def submit_seller():
         holderbankname = request.form['holderbankname']
         bankaccno = request.form['bankaccno']
         cbankaccno = request.form['cbankaccno']
-        password = request.form['password']
-        cpassword = request.form['cpassword']
+        password = str(request.form['password'])
+        cpassword = str(request.form['cpassword'])
         #photoidimg = request.files['sign']
         #photoidimg.save(secure_filename(photoidimg.filename))
        
@@ -304,6 +322,38 @@ def submit_seller():
         
         return "successfull"
 
+
+@app.route('/login_consumer', methods=['GET','POST'])
+def login_consumer():
+    if request.method == 'POST':
+        emailaddr = request.form['emailaddr']
+        password = request.form['password']
+        if db.session.query(RegisterConsumer).filter(RegisterConsumer.emailaddr == emailaddr, RegisterConsumer.password == password).first():
+            session['logged_in'] = True
+            print('successful login')
+            return index()
+        else:
+            print('wrong password!')
+            return index()
+        
+
+@app.route('/login_seller', methods=['GET','POST'])
+def login_seller():
+    if request.method == 'POST':
+        emailaddr = request.form['emailaddr']
+        password = request.form['password']
+        if db.session.query(RegisterSeller).filter(RegisterSeller.emailaddr == emailaddr, RegisterSeller.password == password).first():
+            session['logged_in'] = True
+            print('successful login')
+            return index()
+        else:
+            print('wrong password!')
+            return index()
+
+@app.route("/logout")
+def logout():
+    session['logged_in'] = False
+    return index()
 
 
 if __name__ == '__main__':
