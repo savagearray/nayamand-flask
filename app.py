@@ -334,7 +334,7 @@ def login_consumer():
             return index()
         else:
             print('wrong password!')
-            return login_consumer()
+            return index()
         
 
 @app.route('/login_seller', methods=['GET','POST'])
@@ -348,7 +348,7 @@ def login_seller():
             return index()
         else:
             print('wrong password!')
-            return login_seller()
+            return index()
 
 @app.route("/logout")
 def logout():
