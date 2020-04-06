@@ -146,6 +146,30 @@ def commodity():
 def license():
     return render_template('license.html')
 
+@app.route("/catalog")
+def catalog():
+    return render_template('catalog.html')
+
+@app.route("/product1_details")
+def product1_details():
+    return render_template('product1_details.html')
+
+@app.route("/product2_details")
+def product2_details():
+    return render_template('product2_details.html')
+
+@app.route("/product3_details")
+def product3_details():
+    return render_template('product3_details.html')
+
+@app.route("/product4_details")
+def product4_details():
+    return render_template('product4_details.html')
+
+@app.route("/payment_page")
+def payment_page():
+    return render_template('payment_page.html')
+
 @app.route("/price_details")
 def price_details():
     return render_template('price_details.html')
