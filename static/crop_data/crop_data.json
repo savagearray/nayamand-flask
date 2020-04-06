@@ -5,10 +5,10 @@
     "Market": "Chintamani",
     "Commodity": "Rice",
     "Variety": "Sona",
-    "Date": "20-02-20",
-    "MinPrice": 3700,
-    "MaxPrice": 5200,
-    "ModalPrice": 4000
+    "Date": "06-04-20",
+    "MinPrice": 3900,
+    "MaxPrice": 5250,
+    "ModalPrice": 4100
   },
   {
     "State": "Gujarat",
@@ -16,7 +16,7 @@
     "Market": "Visavadar",
     "Commodity": "Wheat",
     "Variety": "Lokwan Gujrat",
-    "Date": "20-02-20",
+    "Date": "06-04-20",
     "MinPrice": 1825,
     "MaxPrice": 2145,
     "ModalPrice": 1985
@@ -27,7 +27,7 @@
     "Market": "Utraula",
     "Commodity": "Maize",
     "Variety": "Deshi Red",
-    "Date": "20-02-20",
+    "Date": "06-04-20",
     "MinPrice": 1800,
     "MaxPrice": 1860,
     "ModalPrice": 1850
@@ -38,7 +38,7 @@
     "Market": "Jhabua",
     "Commodity": "Cotton",
     "Variety": "Desi",
-    "Date": "20-02-20",
+    "Date": "06-04-20",
     "MinPrice": 4400,
     "MaxPrice": 4400,
     "ModalPrice": 4400
