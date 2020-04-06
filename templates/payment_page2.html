@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Product - NayaMandi</title>
+    <title>Payment - NayaMandi</title>
     <meta name="description" content="Final Year Project">
     <link rel="stylesheet" href="{{ url_for('static',filename='assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
@@ -27,35 +27,34 @@
             </div>
         </div>
     </nav>
-    <main class="page product-page">
-        <section class="clean-block clean-product dark">
-            <div class="container">
+    <main class="page payment-page">
+        <section class="clean-block payment-form dark">
+            <div class="container text-danger">
                 <div class="block-heading">
-                    <h2 class="text-info">Product Page</h2>
-                    <p>Information about our commodities</p>
+                    <h2 class="text-center text-info">Bid</h2>
+                    <p class="text-dark">Here you can place your amount for bidding</p>
                 </div>
-                <div class="block-content">
-                    <div class="product-info">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="gallery">
-                                    <div class="sp-wrap"><a href="assets/img/tech/wheat1.jpg"><img class="img-fluid d-block mx-auto" src="assets/img/tech/wheat1.jpg"></a><a href="assets/img/tech/wheat1.jpg"><img class="img-fluid d-block mx-auto" src="assets/img/tech/wheat2.jpg"></a></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="info">
-                                    <h3>Wheat (Lokwan)</h3>
-                                    <div class="price">
-                                        <h3></h3>
-                                    </div><a href="/payment_page2"><button class="btn btn-primary" type="button"><i class="icon-basket"></i>Add to Cart</button></a>
-                                    <div class="summary">
-                                        <p>With select golden grains that are thick and short, Lokwan Wheat is one of the most popular wheat categories. Loaded with vitamins, minerals, protein and fibre, it is the ultimate choice as staple for the health-conscious. Reduces effects of diabetes and improves insulin resistance. Keeps you full for longer, thus reducing appetite and cutting down cravings between meals. Best wheat for making soft chapattis, phulkas, and rotis. Can also be used in healthy baking recipes.</p>
-                                    </div>
-                                </div>
+                <form>
+                    <div class="products">
+                        <h3 class="title">Checkout</h3>
+                        <div class="item"><span class="price">Rs. 1825</span>
+                            <p class="item-name">Wheat (Lokwan)</p>
+                            <p class="item-description">1 quintal</p>
+                        </div>
+                        <div class="item"><span class="price"></span>
+                            <p class="item-name">Visavadar, Junagarh</p>
+                            <p class="item-description">Gujarat</p>
+                        </div>
+                        <div class="total"><span>Total</span><span class="price">Rs. 1825</span></div>
+                    </div>
+                    <div class="card-details">
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Proceed</button></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>

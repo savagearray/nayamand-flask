@@ -166,9 +166,21 @@ def product3_details():
 def product4_details():
     return render_template('product4_details.html')
 
-@app.route("/payment_page")
-def payment_page():
-    return render_template('payment_page.html')
+@app.route("/payment_page1")
+def payment_page1():
+    return render_template('payment_page1.html')
+
+@app.route("/payment_page2")
+def payment_page2():
+    return render_template('payment_page2.html')
+
+@app.route("/payment_page3")
+def payment_page3():
+    return render_template('payment_page3.html')
+
+@app.route("/payment_page4")
+def payment_page4():
+    return render_template('payment_page4.html')
 
 @app.route("/price_details")
 def price_details():
