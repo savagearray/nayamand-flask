@@ -193,28 +193,28 @@ def price_details():
     '''if not session.get('logged_in'):
         return render_template('login_consumers.html')
     else:'''
-        return render_template('price_details.html')
+    return render_template('price_details.html')
 
 @app.route("/incentives")
 def incentives():
     '''if not session.get('logged_in'):
         return render_template('login_consumers.html')
     else:'''
-        return render_template('incentives.html')
+    return render_template('incentives.html')
 
 @app.route("/ml_working")
 def ml_working():
     '''if not session.get('logged_in'):
         return render_template('login_consumers.html')
     else:'''    
-        return render_template('ml_working.html')
+    return render_template('ml_working.html')
 
 @app.route("/future_prediction")
 def future_prediction():
     '''if not session.get('logged_in'):
         return render_template('login_consumers.html')
     else: '''   
-        return render_template('future_prediction.html')
+    return render_template('future_prediction.html')
 
 @app.route("/registration_consumers")
 def register_consumer():
