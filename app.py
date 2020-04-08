@@ -331,10 +331,10 @@ def login_consumer():
         if db.session.query(RegisterConsumer).filter(RegisterConsumer.emailaddr == emailaddr, RegisterConsumer.password == password).first():
             session['logged_in'] = True
             print('successful login')
-            return index()
+            return render_template('login_consumer.html')
         else:
             print('wrong password!')
-            return index()
+            return render_template('login_consumer.html')
         
 
 @app.route('/login_seller', methods=['GET','POST'])
@@ -345,10 +345,10 @@ def login_seller():
         if db.session.query(RegisterSeller).filter(RegisterSeller.emailaddr == emailaddr, RegisterSeller.password == password).first():
             session['logged_in'] = True
             print('successful login')
-            return index()
+            return render_template('login_sellers.html')
         else:
             print('wrong password!')
-            return index()
+            return render_template('login_sellers.html')
 
 @app.route("/logout")
 def logout():
