@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Gujarat",
+    "District": "Ahmedabad",
+    "Market": "Ahmedabad(Fruit Market, Naroda)",
+    "Commodity": "Water Melon",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 900,
+    "MaxPrice": 1100,
+    "ModalPrice": 1050
+  },
+  {
+    "State": "Gujarat",
+    "District": "Ahmedabad",
+    "Market": "Ahmedabad(Manekchowk)",
+    "Commodity": "Water Melon",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 900,
+    "MaxPrice": 1100,
+    "ModalPrice": 1050
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Bhindi(Ladies Finger)",
+    "Variety": "Bhindi",
+    "Date": "09-04-20",
+    "MinPrice": 2000,
+    "MaxPrice": 2500,
+    "ModalPrice": 2400
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Bottle gourd",
+    "Variety": "Bottle Gourd",
+    "Date": "09-04-20",
+    "MinPrice": 750,
+    "MaxPrice": 1000,
+    "ModalPrice": 900
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Brinjal",
+    "Variety": "Brinjal",
+    "Date": "09-04-20",
+    "MinPrice": 300,
+    "MaxPrice": 400,
+    "ModalPrice": 350
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Cabbage",
+    "Variety": "Cabbage",
+    "Date": "09-04-20",
+    "MinPrice": 200,
+    "MaxPrice": 300,
+    "ModalPrice": 250
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Cauliflower",
+    "Variety": "Cauliflower",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1250,
+    "ModalPrice": 1150
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Green Chilli",
+    "Variety": "Green Chilly",
+    "Date": "09-04-20",
+    "MinPrice": 400,
+    "MaxPrice": 500,
+    "ModalPrice": 450
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Onion",
+    "Variety": "Onion",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1500,
+    "ModalPrice": 1400
+  },
+  {
+    "State": "Gujarat",
+    "District": "Anand",
+    "Market": "Anand(Veg,Yard,Anand)",
+    "Commodity": "Potato",
+    "Variety": "Potato",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1250,
+    "ModalPrice": 1150
+  }
+]

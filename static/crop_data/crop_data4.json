@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Bhindi(Ladies Finger)",
+    "Variety": "Bhindi",
+    "Date": "09-04-20",
+    "MinPrice": 2000,
+    "MaxPrice": 3500,
+    "ModalPrice": 2800
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Brinjal",
+    "Variety": "Brinjal",
+    "Date": "09-04-20",
+    "MinPrice": 700,
+    "MaxPrice": 1100,
+    "ModalPrice": 900
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Capsicum",
+    "Variety": "Capsicum",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1600,
+    "ModalPrice": 1300
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Carrot",
+    "Variety": "Carrot",
+    "Date": "09-04-20",
+    "MinPrice": 500,
+    "MaxPrice": 1000,
+    "ModalPrice": 800
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Cauliflower",
+    "Variety": "Cauliflower",
+    "Date": "09-04-20",
+    "MinPrice": 300,
+    "MaxPrice": 500,
+    "ModalPrice": 400
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Cucumbar(Kheera)",
+    "Variety": "Cucumbar",
+    "Date": "09-04-20",
+    "MinPrice": 200,
+    "MaxPrice": 400,
+    "ModalPrice": 300
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "French Beans (Frasbean)",
+    "Variety": "French Beans (Frasbean)",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1500,
+    "ModalPrice": 1400
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Garlic",
+    "Variety": "Garlic",
+    "Date": "09-04-20",
+    "MinPrice": 2200,
+    "MaxPrice": 6500,
+    "ModalPrice": 4800
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Grapes",
+    "Variety": "Green",
+    "Date": "09-04-20",
+    "MinPrice": 2000,
+    "MaxPrice": 3200,
+    "ModalPrice": 2500
+  },
+  {
+    "State": "Punjab",
+    "District": "Amritsar",
+    "Market": "Amritsar(Amritsar Mewa Mandi)",
+    "Commodity": "Green Chilli",
+    "Variety": "Green Chilly",
+    "Date": "09-04-20",
+    "MinPrice": 800,
+    "MaxPrice": 1200,
+    "ModalPrice": 1000
+  }
+]
