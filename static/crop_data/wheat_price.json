@@ -1,0 +1,102 @@
+[
+  {
+    "Date": "01-01-19",
+    "LowerModalPrice": 786.3068154,
+    "UpperModalPrice": 2564.503867
+  },
+  {
+    "Date": "01-02-19",
+    "LowerModalPrice": 783.5449991,
+    "UpperModalPrice": 2581.983537
+  },
+  {
+    "Date": "01-03-19",
+    "LowerModalPrice": 751.4365979,
+    "UpperModalPrice": 2596.02705
+  },
+  {
+    "Date": "01-04-19",
+    "LowerModalPrice": 745.1965492,
+    "UpperModalPrice": 2629.150804
+  },
+  {
+    "Date": "01-05-19",
+    "LowerModalPrice": 684.651593,
+    "UpperModalPrice": 2617.678538
+  },
+  {
+    "Date": "01-06-19",
+    "LowerModalPrice": 690.3471109,
+    "UpperModalPrice": 2680.62809
+  },
+  {
+    "Date": "01-07-19",
+    "LowerModalPrice": 645.02363,
+    "UpperModalPrice": 2701.781749
+  },
+  {
+    "Date": "01-08-19",
+    "LowerModalPrice": 596.0025775,
+    "UpperModalPrice": 2728.424973
+  },
+  {
+    "Date": "01-09-19",
+    "LowerModalPrice": 560.1354966,
+    "UpperModalPrice": 2777.401538
+  },
+  {
+    "Date": "01-10-19",
+    "LowerModalPrice": 511.7729151,
+    "UpperModalPrice": 2822.901033
+  },
+  {
+    "Date": "01-11-19",
+    "LowerModalPrice": 460.9793095,
+    "UpperModalPrice": 2874.756936
+  },
+  {
+    "Date": "01-12-19",
+    "LowerModalPrice": 285.3975168,
+    "UpperModalPrice": 2810.372107
+  },
+  {
+    "Date": "01-01-20",
+    "LowerModalPrice": -6.470963186,
+    "UpperModalPrice": 3404.42112
+  },
+  {
+    "Date": "01-02-20",
+    "LowerModalPrice": -84.90945885,
+    "UpperModalPrice": 3486.420543
+  },
+  {
+    "Date": "01-03-20",
+    "LowerModalPrice": -196.576835,
+    "UpperModalPrice": 3578.098166
+  },
+  {
+    "Date": "01-04-20",
+    "LowerModalPrice": -285.3262045,
+    "UpperModalPrice": 3688.997131
+  },
+  {
+    "Date": "01-05-20",
+    "LowerModalPrice": -428.8218095,
+    "UpperModalPrice": 3762.265985
+  },
+  {
+    "Date": "01-06-20",
+    "LowerModalPrice": -513.9205236,
+    "UpperModalPrice": 3907.917914
+  },
+  {
+    "Date": "01-07-20",
+    "LowerModalPrice": -647.903821,
+    "UpperModalPrice": 4018.917152
+  },
+  {
+    "Date": "01-08-20",
+    "LowerModalPrice": -788.9824608,
+    "UpperModalPrice": 4136.192591
+  }
+]

@@ -195,12 +195,12 @@ def price_details():
     else:'''
     return render_template('price_details.html')
 
-@app.route("/incentives")
-def incentives():
+@app.route("/predicted_prices")
+def predicted_prices():
     '''if not session.get('logged_in'):
         return render_template('login_consumers.html')
     else:'''
-    return render_template('incentives.html')
+    return render_template('predicted_prices.html')
 
 @app.route("/ml_working")
 def ml_working():
