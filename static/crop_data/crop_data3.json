@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Madhya Pradesh",
+    "District": "Dewas",
+    "Market": "Khategaon",
+    "Commodity": "Wheat",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 1890,
+    "MaxPrice": 1890,
+    "ModalPrice": 1890
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Dewas",
+    "Market": "Sonkatch",
+    "Commodity": "Wheat",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 1700,
+    "MaxPrice": 1820,
+    "ModalPrice": 1800
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Brinjal",
+    "Variety": "Brinjal",
+    "Date": "09-04-20",
+    "MinPrice": 400,
+    "MaxPrice": 500,
+    "ModalPrice": 450
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Cabbage",
+    "Variety": "Cabbage",
+    "Date": "09-04-20",
+    "MinPrice": 300,
+    "MaxPrice": 300,
+    "ModalPrice": 300
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Carrot",
+    "Variety": "Carrot",
+    "Date": "09-04-20",
+    "MinPrice": 700,
+    "MaxPrice": 800,
+    "ModalPrice": 750
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Cauliflower",
+    "Variety": "Cauliflower",
+    "Date": "09-04-20",
+    "MinPrice": 700,
+    "MaxPrice": 1000,
+    "ModalPrice": 850
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Coriander(Leaves)",
+    "Variety": "Coriander",
+    "Date": "09-04-20",
+    "MinPrice": 800,
+    "MaxPrice": 1000,
+    "ModalPrice": 900
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Cucumbar(Kheera)",
+    "Variety": "Cucumbar",
+    "Date": "09-04-20",
+    "MinPrice": 500,
+    "MaxPrice": 500,
+    "ModalPrice": 500
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Green Chilli",
+    "Variety": "Green Chilly",
+    "Date": "09-04-20",
+    "MinPrice": 1500,
+    "MaxPrice": 1500,
+    "ModalPrice": 1500
+  },
+  {
+    "State": "Madhya Pradesh",
+    "District": "Harda",
+    "Market": "Timarni",
+    "Commodity": "Onion",
+    "Variety": "Onion",
+    "Date": "09-04-20",
+    "MinPrice": 1200,
+    "MaxPrice": 1500,
+    "ModalPrice": 1350
+  }
+]

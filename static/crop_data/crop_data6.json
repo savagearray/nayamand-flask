@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Apple",
+    "Variety": "Delicious",
+    "Date": "09-04-20",
+    "MinPrice": 5650,
+    "MaxPrice": 5900,
+    "ModalPrice": 5780
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Arhar Dal(Tur Dal)",
+    "Variety": "Arhar Dal(Tur)",
+    "Date": "09-04-20",
+    "MinPrice": 8750,
+    "MaxPrice": 8950,
+    "ModalPrice": 8840
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Banana",
+    "Variety": "Banana - Ripe",
+    "Date": "09-04-20",
+    "MinPrice": 1550,
+    "MaxPrice": 1700,
+    "ModalPrice": 1625
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Bengal Gram Dal (Chana Dal)",
+    "Variety": "Bengal Gram Dal",
+    "Date": "09-04-20",
+    "MinPrice": 6150,
+    "MaxPrice": 6350,
+    "ModalPrice": 6240
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Bengal Gram(Gram)(Whole)",
+    "Variety": "Desi (Whole)",
+    "Date": "09-04-20",
+    "MinPrice": 5150,
+    "MaxPrice": 5300,
+    "ModalPrice": 5220
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Bhindi(Ladies Finger)",
+    "Variety": "Bhindi",
+    "Date": "09-04-20",
+    "MinPrice": 2550,
+    "MaxPrice": 2750,
+    "ModalPrice": 2650
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Black Gram Dal (Urd Dal)",
+    "Variety": "Black Gram Dal",
+    "Date": "09-04-20",
+    "MinPrice": 8800,
+    "MaxPrice": 9100,
+    "ModalPrice": 8950
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Bottle gourd",
+    "Variety": "Bottle Gourd",
+    "Date": "09-04-20",
+    "MinPrice": 1000,
+    "MaxPrice": 1100,
+    "ModalPrice": 1040
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Brinjal",
+    "Variety": "Round",
+    "Date": "09-04-20",
+    "MinPrice": 950,
+    "MaxPrice": 1100,
+    "ModalPrice": 1010
+  },
+  {
+    "State": "Uttar Pradesh",
+    "District": "Agra",
+    "Market": "Agra",
+    "Commodity": "Cabbage",
+    "Variety": "Cabbage",
+    "Date": "09-04-20",
+    "MinPrice": 750,
+    "MaxPrice": 900,
+    "ModalPrice": 820
+  }
+]

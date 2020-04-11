@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Bagalakot",
+    "Commodity": "Cowpea (Lobia/Karamani)",
+    "Variety": "Cowpea (Whole)",
+    "Date": "09-04-20",
+    "MinPrice": 4800,
+    "MaxPrice": 4800,
+    "ModalPrice": 4800
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Bagalakot",
+    "Commodity": "Groundnut",
+    "Variety": "Gejje",
+    "Date": "09-04-20",
+    "MinPrice": 4800,
+    "MaxPrice": 5825,
+    "ModalPrice": 5610
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Bagalakot",
+    "Commodity": "Maize",
+    "Variety": "Hybrid/Local",
+    "Date": "09-04-20",
+    "MinPrice": 1179,
+    "MaxPrice": 1179,
+    "ModalPrice": 1179
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Jamakhandi",
+    "Commodity": "Maize",
+    "Variety": "Hybrid/Local",
+    "Date": "09-04-20",
+    "MinPrice": 1250,
+    "MaxPrice": 1350,
+    "ModalPrice": 1300
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Jamakhandi",
+    "Commodity": "Wheat",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 2800,
+    "MaxPrice": 3500,
+    "ModalPrice": 3250
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bagalkot",
+    "Market": "Mhalingapur",
+    "Commodity": "Gur(Jaggery)",
+    "Variety": "Nizamabad",
+    "Date": "09-04-20",
+    "MinPrice": 2800,
+    "MaxPrice": 3900,
+    "ModalPrice": 3622
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bangalore",
+    "Market": "Bangalore",
+    "Commodity": "Arhar Dal(Tur Dal)",
+    "Variety": "Arhar Dal(Tur)",
+    "Date": "09-04-20",
+    "MinPrice": 8000,
+    "MaxPrice": 10000,
+    "ModalPrice": 9000
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bangalore",
+    "Market": "Bangalore",
+    "Commodity": "Avare Dal",
+    "Variety": "Avare (Whole)",
+    "Date": "09-04-20",
+    "MinPrice": 4000,
+    "MaxPrice": 4500,
+    "ModalPrice": 4250
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bangalore",
+    "Market": "Bangalore",
+    "Commodity": "Bengal Gram Dal (Chana Dal)",
+    "Variety": "Bengal Gram Dal",
+    "Date": "09-04-20",
+    "MinPrice": 6000,
+    "MaxPrice": 6500,
+    "ModalPrice": 6250
+  },
+  {
+    "State": "Karnataka",
+    "District": "Bangalore",
+    "Market": "Bangalore",
+    "Commodity": "Bengal Gram(Gram)(Whole)",
+    "Variety": "Average (Whole)",
+    "Date": "09-04-20",
+    "MinPrice": 5400,
+    "MaxPrice": 6200,
+    "ModalPrice": 5800
+  }
+]

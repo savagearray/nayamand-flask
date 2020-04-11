@@ -1,0 +1,112 @@
+[
+  {
+    "State": "Tamil Nadu",
+    "District": "Ariyalur",
+    "Market": "Andimadom",
+    "Commodity": "Cashewnuts",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 8250,
+    "MaxPrice": 10750,
+    "ModalPrice": 10375
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Coimbatore",
+    "Market": "Anaimalai",
+    "Commodity": "Coconut",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 3000,
+    "MaxPrice": 3200,
+    "ModalPrice": 3100
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Coimbatore",
+    "Market": "Palladam",
+    "Commodity": "Coconut",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 2300,
+    "MaxPrice": 2500,
+    "ModalPrice": 2400
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Coimbatore",
+    "Market": "Pongalur",
+    "Commodity": "Coconut",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 1800,
+    "MaxPrice": 2000,
+    "ModalPrice": 1900
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Coimbatore",
+    "Market": "Pudupalayam",
+    "Commodity": "Coconut",
+    "Variety": "Coconut",
+    "Date": "09-04-20",
+    "MinPrice": 3200,
+    "MaxPrice": 3400,
+    "ModalPrice": 3300
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Coimbatore",
+    "Market": "Sevur",
+    "Commodity": "Groundnut",
+    "Variety": "DMV-7",
+    "Date": "09-04-20",
+    "MinPrice": 5300,
+    "MaxPrice": 5800,
+    "ModalPrice": 5500
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Dindigul",
+    "Market": "Oddunchairum",
+    "Commodity": "Coconut",
+    "Variety": "Other",
+    "Date": "09-04-20",
+    "MinPrice": 1800,
+    "MaxPrice": 2800,
+    "ModalPrice": 1800
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Erode",
+    "Market": "Kunnathur",
+    "Commodity": "Coconut",
+    "Variety": "Coconut",
+    "Date": "09-04-20",
+    "MinPrice": 2600,
+    "MaxPrice": 3500,
+    "ModalPrice": 3000
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Erode",
+    "Market": "Muthur",
+    "Commodity": "Copra",
+    "Variety": "Copra",
+    "Date": "09-04-20",
+    "MinPrice": 4825,
+    "MaxPrice": 10290,
+    "ModalPrice": 8065
+  },
+  {
+    "State": "Tamil Nadu",
+    "District": "Erode",
+    "Market": "Vellakkoil",
+    "Commodity": "Copra",
+    "Variety": "Copra",
+    "Date": "09-04-20",
+    "MinPrice": 5840,
+    "MaxPrice": 10670,
+    "ModalPrice": 10175
+  }
+]

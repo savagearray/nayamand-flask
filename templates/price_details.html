@@ -12,6 +12,77 @@
         	api_key: 'wg_1b35d5b3f0269f34d921c063120963c00'
     	});
 	</script>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			document.getElementById("crop_table1").style.display = 'none';
+			document.getElementById("crop_table2").style.display = 'none';
+			document.getElementById("crop_table3").style.display = 'none';
+			document.getElementById("crop_table4").style.display = 'none';
+			document.getElementById("crop_table5").style.display = 'none';
+			document.getElementById("crop_table6").style.display = 'none';
+		}
+
+		function onStateSelected(){
+			var state = document.getElementById("drop_states").value;
+			if (state == "gj") {
+				document.getElementById("crop_table1").style.display = '';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+			else if(state == "ka"){
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = '';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+			else if(state == "mp"){
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = '';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+			else if(state == "pb"){
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = '';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+			else if(state == "tn"){
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = '';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+			else if(state == "up"){
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = '';
+			}
+			else{
+				document.getElementById("crop_table1").style.display = 'none';
+				document.getElementById("crop_table2").style.display = 'none';
+				document.getElementById("crop_table3").style.display = 'none';
+				document.getElementById("crop_table4").style.display = 'none';
+				document.getElementById("crop_table5").style.display = 'none';
+				document.getElementById("crop_table6").style.display = 'none';
+			}
+		}
+	</script>
     
 </head>
 <body>
@@ -45,8 +116,22 @@
   		</div>
 	</nav>
   	<!-- Navbar ends -->
+
+  	<label for="drop_states"><h4>Choose a state:</h4></label>
+
+	<select id="drop_states" onchange="onStateSelected()">
+		<option>-----</option>
+		<option value="gj">Gujarat</option>
+		<option value="ka">Karnataka</option>
+		<option value="mp">Madhya Pradesh</option>
+  		<option value="pb">Punjab</option>
+  		<option value="tn">Tamil Nadu</option>
+  		<option value="up">Uttar Pradesh</option>
+	</select>
+
+
 	<div class="table-responsive">
-		<table class="table table-bordered table-striped" id="crop_table">
+		<table class="table table-bordered table-striped" id="crop_table1">
 			<tr>
 				<th>State</th>
 				<th>District</th>
@@ -60,12 +145,94 @@
 			</tr>
 		</table>
 	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="crop_table2">
+			<tr>
+				<th>State</th>
+				<th>District</th>
+				<th>Market</th>
+				<th>Commodity</th>
+				<th>Variety</th>
+				<th>Date</th>
+				<th>Minimum Price</th>
+				<th>Maximum Price</th>
+				<th>Modal Price</th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="crop_table3">
+			<tr>
+				<th>State</th>
+				<th>District</th>
+				<th>Market</th>
+				<th>Commodity</th>
+				<th>Variety</th>
+				<th>Date</th>
+				<th>Minimum Price</th>
+				<th>Maximum Price</th>
+				<th>Modal Price</th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="crop_table4">
+			<tr>
+				<th>State</th>
+				<th>District</th>
+				<th>Market</th>
+				<th>Commodity</th>
+				<th>Variety</th>
+				<th>Date</th>
+				<th>Minimum Price</th>
+				<th>Maximum Price</th>
+				<th>Modal Price</th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="crop_table5">
+			<tr>
+				<th>State</th>
+				<th>District</th>
+				<th>Market</th>
+				<th>Commodity</th>
+				<th>Variety</th>
+				<th>Date</th>
+				<th>Minimum Price</th>
+				<th>Maximum Price</th>
+				<th>Modal Price</th>
+			</tr>
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="crop_table6">
+			<tr>
+				<th>State</th>
+				<th>District</th>
+				<th>Market</th>
+				<th>Commodity</th>
+				<th>Variety</th>
+				<th>Date</th>
+				<th>Minimum Price</th>
+				<th>Maximum Price</th>
+				<th>Modal Price</th>
+			</tr>
+		</table>
+	</div>
+
+
 </body>
 </html>
 
 <script>
 	$(document).ready(function(){
-		$.getJSON("{{ url_for('static',filename='crop_data/crop_data.json') }}", function(data){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data1.json') }}", function(data){
 				var crop_data = '';
 				$.each(data, function(key, value){
 					crop_data += '<tr>';
@@ -79,7 +246,112 @@
 					crop_data += '<td>'+value.MaxPrice+'</td>';
 					crop_data += '<td>'+value.ModalPrice+'</td>';
 				});
-				$('#crop_table').append(crop_data);
+				$('#crop_table1').append(crop_data);
+			});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data2.json') }}", function(data){
+				var crop_data = '';
+				$.each(data, function(key, value){
+					crop_data += '<tr>';
+					crop_data += '<td>'+value.State+'</td>';
+					crop_data += '<td>'+value.District+'</td>';
+					crop_data += '<td>'+value.Market+'</td>';
+					crop_data += '<td>'+value.Commodity+'</td>';
+					crop_data += '<td>'+value.Variety+'</td>';
+					crop_data += '<td>'+value.Date+'</td>';
+					crop_data += '<td>'+value.MinPrice+'</td>';
+					crop_data += '<td>'+value.MaxPrice+'</td>';
+					crop_data += '<td>'+value.ModalPrice+'</td>';
+				});
+				$('#crop_table2').append(crop_data);
+			});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data3.json') }}", function(data){
+				var crop_data = '';
+				$.each(data, function(key, value){
+					crop_data += '<tr>';
+					crop_data += '<td>'+value.State+'</td>';
+					crop_data += '<td>'+value.District+'</td>';
+					crop_data += '<td>'+value.Market+'</td>';
+					crop_data += '<td>'+value.Commodity+'</td>';
+					crop_data += '<td>'+value.Variety+'</td>';
+					crop_data += '<td>'+value.Date+'</td>';
+					crop_data += '<td>'+value.MinPrice+'</td>';
+					crop_data += '<td>'+value.MaxPrice+'</td>';
+					crop_data += '<td>'+value.ModalPrice+'</td>';
+				});
+				$('#crop_table3').append(crop_data);
+			});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data4.json') }}", function(data){
+				var crop_data = '';
+				$.each(data, function(key, value){
+					crop_data += '<tr>';
+					crop_data += '<td>'+value.State+'</td>';
+					crop_data += '<td>'+value.District+'</td>';
+					crop_data += '<td>'+value.Market+'</td>';
+					crop_data += '<td>'+value.Commodity+'</td>';
+					crop_data += '<td>'+value.Variety+'</td>';
+					crop_data += '<td>'+value.Date+'</td>';
+					crop_data += '<td>'+value.MinPrice+'</td>';
+					crop_data += '<td>'+value.MaxPrice+'</td>';
+					crop_data += '<td>'+value.ModalPrice+'</td>';
+				});
+				$('#crop_table4').append(crop_data);
+			});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data5.json') }}", function(data){
+				var crop_data = '';
+				$.each(data, function(key, value){
+					crop_data += '<tr>';
+					crop_data += '<td>'+value.State+'</td>';
+					crop_data += '<td>'+value.District+'</td>';
+					crop_data += '<td>'+value.Market+'</td>';
+					crop_data += '<td>'+value.Commodity+'</td>';
+					crop_data += '<td>'+value.Variety+'</td>';
+					crop_data += '<td>'+value.Date+'</td>';
+					crop_data += '<td>'+value.MinPrice+'</td>';
+					crop_data += '<td>'+value.MaxPrice+'</td>';
+					crop_data += '<td>'+value.ModalPrice+'</td>';
+				});
+				$('#crop_table5').append(crop_data);
+			});
+	});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$.getJSON("{{ url_for('static',filename='crop_data/crop_data6.json') }}", function(data){
+				var crop_data = '';
+				$.each(data, function(key, value){
+					crop_data += '<tr>';
+					crop_data += '<td>'+value.State+'</td>';
+					crop_data += '<td>'+value.District+'</td>';
+					crop_data += '<td>'+value.Market+'</td>';
+					crop_data += '<td>'+value.Commodity+'</td>';
+					crop_data += '<td>'+value.Variety+'</td>';
+					crop_data += '<td>'+value.Date+'</td>';
+					crop_data += '<td>'+value.MinPrice+'</td>';
+					crop_data += '<td>'+value.MaxPrice+'</td>';
+					crop_data += '<td>'+value.ModalPrice+'</td>';
+				});
+				$('#crop_table6').append(crop_data);
 			});
 	});
 </script>
