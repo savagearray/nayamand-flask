@@ -10,7 +10,7 @@ app = Flask(__name__ ,
             static_url_path='', 
             static_folder='static')
 
-ENV = 'prod'
+ENV = 'dev'
 if ENV == 'dev':
     app.debug = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:A4notebook@localhost/nayamandi'
@@ -326,26 +326,26 @@ def submit_seller():
 @app.route('/login_consumer', methods=['GET','POST'])
 def login_consumer():
     if request.method == 'POST':
-        emailaddr = request.form['emailaddr']
+        id = request.form['id']
         password = request.form['password']
-        if db.session.query(RegisterConsumer).filter(RegisterConsumer.emailaddr == emailaddr, RegisterConsumer.password == password).first():
+        if db.session.query(RegisterConsumer).filter(RegisterConsumer.id == id, RegisterConsumer.password == password).first():
             session['logged_in'] = True
             print('successful login')
-            return render_template('login_consumer.html')
+            return render_template('catalog.html')
         else:
             print('wrong password!')
-            return render_template('login_consumer.html')
+            return render_template('login_consumers.html')
         
 
 @app.route('/login_seller', methods=['GET','POST'])
 def login_seller():
     if request.method == 'POST':
-        emailaddr = request.form['emailaddr']
+        id = request.form['id']
         password = request.form['password']
-        if db.session.query(RegisterSeller).filter(RegisterSeller.emailaddr == emailaddr, RegisterSeller.password == password).first():
+        if db.session.query(RegisterSeller).filter(RegisterSeller.id == id, RegisterSeller.password == password).first():
             session['logged_in'] = True
             print('successful login')
-            return render_template('login_sellers.html')
+            return render_template('catalog.html')
         else:
             print('wrong password!')
             return render_template('login_sellers.html')
