@@ -10,7 +10,7 @@ app = Flask(__name__ ,
             static_url_path='', 
             static_folder='static')
 
-ENV = 'dev'
+ENV = 'prod'
 if ENV == 'dev':
     app.debug = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:A4notebook@localhost/nayamandi'
