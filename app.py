@@ -330,10 +330,10 @@ def login_consumer():
         password = request.form['password']
         if db.session.query(RegisterConsumer).filter(RegisterConsumer.id == id, RegisterConsumer.password == password).first():
             session['logged_in'] = True
-            print('successful login')
+            flash('successful login')
             return render_template('catalog.html')
         else:
-            print('wrong password!')
+            flash('wrong password!')
             return render_template('login_consumers.html')
         
 
@@ -344,10 +344,10 @@ def login_seller():
         password = request.form['password']
         if db.session.query(RegisterSeller).filter(RegisterSeller.id == id, RegisterSeller.password == password).first():
             session['logged_in'] = True
-            print('successful login')
+            flash('successful login')
             return render_template('catalog.html')
         else:
-            print('wrong password!')
+            flash('Login Failed')
             return render_template('login_sellers.html')
 
 @app.route("/logout")
