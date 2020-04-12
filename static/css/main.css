@@ -16,12 +16,6 @@ html, body{
 	max-width: 80%;
 	position: relative;
 }
-.logoutLblPos{
-
-    position:fixed;
-    right:10px;
-    top:5px;
- }
 
 /* Video window */
 .video-container{
