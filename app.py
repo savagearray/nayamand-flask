@@ -220,9 +220,9 @@ def future_prediction():
 def register_consumer():
     return render_template('registration_consumers.html')
 
-@app.route("/crop_price_pridiction_algorithm")
+@app.route("/crop_prediction")
 def crop_prediction():
-    return render_template('crop_price_pridiction_algorithm.html')
+    return render_template('crop_prediction.html')
 
 @app.route("/registration_sellers")
 def register_seller():
